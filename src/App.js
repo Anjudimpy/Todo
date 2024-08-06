@@ -23,22 +23,14 @@ function App() {
 
     const [isVisible, setIsVisible] = useState(true);
 
-    const checkScreenSize = () => {
-      return window.innerWidth > 800; 
-    };
-  
-    useEffect(() => {
-      setIsVisible(checkScreenSize());
-    }, []);
-
-    const toggleVisibility = () => {
+       const toggleVisibility = () => {
       setIsVisible(!isVisible);
     };
 
   return (
  <>
  <Header toggleVisibility={toggleVisibility} />
-    <div className=' md:flex  justify-center mx-14 my-20'>
+    <div className=' sm:flex  justify-center mx-14 my-20'>
      
      <div className=''>
       <LeftTodo isVisible={isVisible}/>
