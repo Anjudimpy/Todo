@@ -15,7 +15,7 @@ const Header = ({ toggleVisibility }) => {
     <img src='logo.png' className='h-8'/>
    </span>
         </div>
-         <div className='flex gap-5 py-1'>
+         <div className='sm:flex gap-5 py-1 hidden'>
           <span className='text-[1.5rem]'><CiSearch/></span>
           <span><GridViewIcon /></span>
           <span><RiMoonClearLine className='text-[1.5rem]'/></span>

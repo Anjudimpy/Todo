@@ -12,10 +12,53 @@ const LeftTodo = ({ isVisible }) => {
   return (
    <>
     {isVisible && (
-     
-    <div className='xl:w-[290px] w-[200px] h-[900px] bg-green-50'>
+<div>
+<div className='bg-white mb-5  -mt-20 mr-2 sm:hidden'>
+    <div className='flex gap-1'>
+    <div className='flex gap-2 shadow-md  cursor-pointer px-2  py-2 w-full '>
+    <span><PiNotepad className='text-[15px] text-gray-700'/> </span>
+    <sapn className='font-semibold  text-[8px]'>All Task</sapn>
+    </div>
+
+    <div className='flex gap-2 shadow-md  cursor-pointer px-2  py-2 w-full '>
+    <span><IoTodayOutline className='text-[15px] text-gray-700 '/> </span>
+    <sapn className='font-semibold  text-[8px]'>Today</sapn>
+    </div>
+
+    <div className='flex gap-2 shadow-md  cursor-pointer px-2  py-2 w-full '>
+    <span><IoIosStarOutline className='text-[15px] text-gray-700'/> </span>
+    <sapn className='font-semibold text-[8px]'>Important</sapn>
+    </div>
+    </div>
+
+    <div className='flex gap-1'>
+    <div className='flex gap-2 shadow-md cursor-pointer px-2  py-2 w-full '>
+    <span><LuBookOpen className='text-[15px] text-gray-700'/> </span>
+    <sapn className='font-semibold  text-[8px]'>Planned</sapn>
+    </div>
+
+    <div className='flex gap-2 shadow-md cursor-pointer px-2  py-2 w-full '>
+    <span><MdOutlineAssignmentInd className='text-[15px] text-gray-700'/> </span>
+    <sapn className='font-semibold  text-[8px] '>Assigned to me</sapn>
+    </div>
+
+    {/* <div className='flex gap-2 shadow-md cursor-pointer  px-2  py-2  w-full '>
+    <span><GoPlus className='text-[15px] text-gray-700'/> </span>
+    <sapn className='font-semibold  text-[8px] '>Add List</sapn>
+    </div> */}
+    
+    </div>
+
+
+   
+   
+</div>
+    <div>
         
-        <div className='relative '>
+     
+    <div className='xl:w-[290px] sm:block hidden w-[200px] h-[900px] bg-green-50'>
+        
+        <div className='relative'>
             <div className='absolute xl:-top-14 -top-10 left-[25%]'>
             <img src="gdp.jpg" alt="User Profile"
         className='rounded-full xl:w-32 xl:h-32 h-20 w-20 mb-3' />
@@ -81,6 +124,9 @@ const LeftTodo = ({ isVisible }) => {
 </div>
 
    </div>
+    </div>
+</div>
+
       
     )}
    </>

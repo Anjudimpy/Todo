@@ -24,10 +24,9 @@ function App() {
     const [isVisible, setIsVisible] = useState(true);
 
     const checkScreenSize = () => {
-      return window.innerWidth > 800; // or any breakpoint you want to use
+      return window.innerWidth > 800; 
     };
   
-    // Set initial state based on screen size
     useEffect(() => {
       setIsVisible(checkScreenSize());
     }, []);
@@ -39,7 +38,7 @@ function App() {
   return (
  <>
  <Header toggleVisibility={toggleVisibility} />
-    <div className=' flex justify-center mx-14 my-20'>
+    <div className=' md:flex  justify-center mx-14 my-20'>
      
      <div className=''>
       <LeftTodo isVisible={isVisible}/>
@@ -54,7 +53,7 @@ function App() {
        <div>
        <button
       onClick={()=>dispatch(deleteAll())} 
-        className='py-2  px-5 mx-10 rounded-md text-white  bg-red-500'>DELETE ALL</button>
+        className='py-2 md:text-[15px] text-[10px]   md:px-5 px-3 md:mx-10 rounded-md text-white  bg-red-500'>DELETE ALL</button>
        </div>
    
       </div>
