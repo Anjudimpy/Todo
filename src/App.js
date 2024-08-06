@@ -30,7 +30,7 @@ function App() {
   return (
  <>
  <Header toggleVisibility={toggleVisibility} />
-    <div className=' sm:flex  justify-center mx-14 my-20'>
+    <div className=' sm:flex  justify-center sm:mx-14 mx-3 my-20'>
      
      <div className=''>
       <LeftTodo isVisible={isVisible}/>

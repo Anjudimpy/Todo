@@ -8,7 +8,7 @@ const Header = ({ toggleVisibility }) => {
   
   return (
     <div className=' w-full'>
-      <div className='flex px-14 py-3 justify-between w-full'>
+      <div className='flex sm:px-14 px-2 py-3 justify-between w-full'>
         <div className='flex gap-4'>
    <span onClick={toggleVisibility}><IoIosMenu className='text-[2.5rem] py-1'/></span>
    <span>
