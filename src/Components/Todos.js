@@ -12,6 +12,7 @@ const Todos = ({handleEditClick, editFormVisibility}) => {
   const todos =useSelector((state)=>state.operationsReducer);
 
    return todos.map((todo)=>(
+    <>
   <div className='mx-10'>
   <div key={todo.id} className='todo-box my-7 px-5  flex'>
      <div className='flex justify-between w-full'>
@@ -38,8 +39,10 @@ const Todos = ({handleEditClick, editFormVisibility}) => {
      </div>
     </div>
     <hr></hr>
+  
   </div>
   
+  </>
   ))
 }
 
